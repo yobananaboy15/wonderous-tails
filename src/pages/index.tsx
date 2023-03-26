@@ -1,5 +1,6 @@
 import { ImageGrid } from "@/components";
 import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
 
 export default function Home() {
   const results = [
@@ -2607,6 +2608,9 @@ export default function Home() {
 
   return (
     <Container>
+      <Typography variant="h1" align="center" sx={{ mb: 8 }}>
+        Wonderous Tails
+      </Typography>
       <ImageGrid
         images={results.map((item) => ({
           ...item,
