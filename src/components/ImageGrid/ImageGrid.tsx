@@ -16,7 +16,7 @@ export const ImageGrid = ({ images }: ImageGridProps) => {
   return (
     <Grid container justifyContent="center" spacing={2}>
       {images.map(({ imgSrc, text, ID }) => (
-        <Grid sx={{ maxWidth: 300 }}>
+        <Grid sx={{ maxWidth: 350 }} key={ID}>
           <Box
             component="img"
             loading="lazy"
