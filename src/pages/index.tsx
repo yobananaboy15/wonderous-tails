@@ -1,7 +1,4 @@
 export default function Home() {
-  //Hämta text för dungeons.
-  //Hämta text för
-
   const results = [
     {
       ID: 1,
