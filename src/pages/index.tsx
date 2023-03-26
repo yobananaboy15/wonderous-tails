@@ -1,3 +1,5 @@
+import { ImageGrid } from "@/components";
+
 export default function Home() {
   const results = [
     {
@@ -2604,9 +2606,13 @@ export default function Home() {
 
   return (
     <div>
-      {results.map((item) => (
-        <img loading="lazy" src={`https://xivapi.com${item.Image}`} />
-      ))}
+      <ImageGrid
+        images={results.map((item) => ({
+          ...item,
+          imgSrc: item.Image,
+          text: item.Name,
+        }))}
+      />
     </div>
   );
 }
