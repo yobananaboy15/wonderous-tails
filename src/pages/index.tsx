@@ -1,4 +1,5 @@
 import { ImageGrid } from "@/components";
+import Container from "@mui/material/Container";
 
 export default function Home() {
   const results = [
@@ -2605,7 +2606,7 @@ export default function Home() {
   ];
 
   return (
-    <div>
+    <Container>
       <ImageGrid
         images={results.map((item) => ({
           ...item,
@@ -2613,6 +2614,6 @@ export default function Home() {
           text: item.Name,
         }))}
       />
-    </div>
+    </Container>
   );
 }
